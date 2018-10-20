@@ -4,7 +4,13 @@
 
 int sieve(int end){
 	int nums = (int)(end*log(end)*1.15);
-	char * arr = calloc(nums, sizeof(char));
+	char arr[nums];
+	int i = nums;
+	while(i+1){
+		arr[i] = 0;
+		i--;
+	}
+
 	int iter = 0;
 	int counter = 2;
 	int prime_num = end;
