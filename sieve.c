@@ -36,5 +36,6 @@ int sieve(int end){
 }
 
 int main(){
+	printf("hi");
 	printf("%d\n", sieve(1000000));
 }
